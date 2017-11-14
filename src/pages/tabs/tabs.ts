@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
-import {GeolocPage} from '../geoloc/geoloc.ts';
+import {GeolocPage} from '../geoloc/geoloc';
 
 @Component({
   templateUrl: 'tabs.html'
