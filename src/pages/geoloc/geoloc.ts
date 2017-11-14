@@ -16,7 +16,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 export class GeolocPage {
 lat: any;
 lon: any;
-position: array<string>;
+position: Array<string>;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private geolocation: Geolocation) {
     this.geolocation.getCurrentPosition().then((resp) => {
