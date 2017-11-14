@@ -1,3 +1,24 @@
-<ion-tabs>
-    <ion-tab [root]="geoRoot" tabTitle="Geo" tabIcon="information-circle"></ion-tab>
-</ion-tabs>
+<!--
+  Generated template for the GeolocPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Geo localisation</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1>Current</h1>
+ <h2>latitude : {{lat}} longitude : {{lon}}</h2>
+
+<h1>Watch</h1>
+<ul>
+  <li *ngfor="let data of position"></li>
+</ul>
+</ion-content>

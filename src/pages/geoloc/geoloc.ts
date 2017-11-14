@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 /**
- * Generated class for the GeolocPage tabs.
+ * Generated class for the GeolocPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,26 +11,30 @@ import { Geolocation } from '@ionic-native/geolocation';
 @IonicPage()
 @Component({
   selector: 'page-geoloc',
-  templateUrl: 'geoloc.html'
+  templateUrl: 'geoloc.html',
 })
 export class GeolocPage {
+lat: any;
+lon: any;
+position: array<string>;
 
-  geoRoot = 'GeoPage'
+  constructor(public navCtrl: NavController, public navParams: NavParams, private geolocation: Geolocation) {
+    this.geolocation.getCurrentPosition().then((resp) => {
+      this.lat = resp.coords.latitude
+      this.lon = resp.coords.longitude
+    }).catch((error) => {
+      console.log('Error getting location', error);
+    });
 
+    this.position = new Array();
+    geolocation.watchPosition().subscribe(pos => {
+      this.position.push('latitude : ' + pos.coords.latitude + ', longitude : ' +pos.coords.longitude);
+      console.log('latitude : ' + pos.coords.latitude + ', longitude : ' +pos.coords.longitude);
+    })
 
-  constructor(private geolocation: Geolocation) {}
+  }
 
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad GeolocPage');
+  }
 }
-
-this.geolocation.getCurrentPosition().then((resp) => {
- // resp.coords.latitude
- // resp.coords.longitude
-}).catch((error) => {
-  console.log('Error getting location', error);
-});
-let watch = this.geolocation.watchPosition();
-watch.subscribe((data) => {
- // data can be a set of coordinates, or an error (if an error occurred).
- // data.coords.latitude
- // data.coords.longitude
-});

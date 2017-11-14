@@ -8,6 +8,6 @@ import { GeolocPage } from './geoloc';
   ],
   imports: [
     IonicPageModule.forChild(GeolocPage),
-  ]
+  ],
 })
 export class GeolocPageModule {}
