@@ -1,4 +1,4 @@
-/**import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 
@@ -38,4 +38,3 @@ position: Array<string>;
     console.log('ionViewDidLoad GeolocPage');
   }
 }
-*/

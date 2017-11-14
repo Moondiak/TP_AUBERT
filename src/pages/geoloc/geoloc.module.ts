@@ -1,4 +1,4 @@
-/*import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { GeolocPage } from './geoloc';
 
@@ -11,4 +11,3 @@ import { GeolocPage } from './geoloc';
   ],
 })
 export class GeolocPageModule {}
-*/
