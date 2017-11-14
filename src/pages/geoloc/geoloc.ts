@@ -1,12 +1,12 @@
 /**import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
-/**
- * Generated class for the GeolocPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- *
+
+  Generated class for the GeolocPage page.
+
+  See https://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+
 
 @IonicPage()
 @Component({
@@ -38,3 +38,4 @@ position: Array<string>;
     console.log('ionViewDidLoad GeolocPage');
   }
 }
+*/

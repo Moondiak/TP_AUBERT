@@ -11,3 +11,4 @@ import { GeolocPage } from './geoloc';
   ],
 })
 export class GeolocPageModule {}
+*/
