@@ -1,6 +1,6 @@
 
 
-AUBERT Jean-Marc B3 - ingésup
+AUBERT Jean-Marc B3 - INGESUP
 
 
 This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
@@ -28,3 +28,4 @@ $ ionic cordova run ios
 ```
 
 Substitute ios for android if not on a Mac.
+"# B3AppliMobile"

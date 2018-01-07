@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { GeolocPage } from './geoloc';
+import { GyroscopePage } from './gyroscope';
 
 @NgModule({
   declarations: [
-    GeolocPage,
+    GyroscopePage,
   ],
   imports: [
-    IonicPageModule.forChild(GeolocPage),
+    IonicPageModule.forChild(GyroscopePage),
   ],
 })
-export class GeolocPageModule {}
+export class GyroscopePageModule {}
